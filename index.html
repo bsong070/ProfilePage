@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,175 @@
 </head>
 <body>
     <div id="app"></div>    
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+    " 
+    rel="stylesheet"  type='text/css'>
+  
+  <nav id="navbar">
+      <a class="nav-link" href="#welcome-section">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#socials">Socials</a>
+  </nav>
+  
+  <section id="welcome-section">
+      <header>
+      <h1>Hello, my name is Brian Song</h1>
+      <p class="intro">and I am an aspiring Software Engineer</p>
+  </header>
+  </section>
+  
+  <section id = "projects">
+  <h2>These are some of my projects</h2>
+  <div class="project-tile"><a href='#' target = "_blank">App</a></div>
+  <div class="project-tile"></div>
+  <div class="project-tile"></div>
+  <div class="project-tile"></div>
+  </section>
+  
+  <section id="socials">
+  <p>You can find me on:</p>
+  
+  <ul id="social-links">
+      <li><a id="profile-link" href="https://www.linkedin.com/in/brian-song-eit-80657389"target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a id="profile-link" href="https://github.com/bsong070"target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a id="profile-link" href="https://www.freecodecamp.org/fcc1da163ef-24cb-4248-832b-f149d54ac016"target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+  </ul>
+  </section>
+  
+  <img id="profile-link" src="https://github.com/bsong070"target="_blank">See More</img>
+
 
 </body>
 </html>
 
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@media all and (max-width: 300px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#3D607D;
+    font-family: 'Roboto Condensed' , sans-serif;
+    margin:0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-section{
+    width:100%;
+    height:100vh;
+
+}
+
+h1{
+    color: white;
+    text-align:center;
+    padding-top:200px;
+    font-size:100px;
+}
+
+.intro{
+    color:white;
+    font-style:italic;
+    font-size: 75px;
+    text-align:center;
+}
+
+#navbar{
+    background-color: #03213B;
+    color:#339FFF;
+    display:flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:white;
+    margin-left:25px;
+
+    }
+
+.nav-link:hover{
+    background-color:lightblue;
+}
+
+header{
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    height:100vh;
+    background-size:cover;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*
+header::after{
+    content: "";
+    background-color:black;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.7;
+}
+
+header * {
+    position:relative;
+    z-index:1; */
+}
+
+
+
+
+#projects{
+    width:100%;
+    height:1200px;
+    text-align:center;
+    background-color: #339FFF	;
+
+}
+
+h2{
+    padding-top:20%;
+    font-size: 50px;
+    color:white;
+}
+
+section {
+    text-align:center;
+}
+
+#social-links{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    padding:0;
+    margin:0;
+}
+
+#social-links a{
+    color:white;
+    font-size:20px;
+
+}
+
+</style>
